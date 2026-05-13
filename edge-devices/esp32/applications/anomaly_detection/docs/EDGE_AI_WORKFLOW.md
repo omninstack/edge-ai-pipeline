@@ -52,7 +52,8 @@ The `model_ota_cli.py` tool uses a 3-stage protocol to update models in the fiel
 
 ### CLI Usage:
 ```bash
-python model_ota_cli.py --file models/anomaly_detector.tflite --mode mqtt --broker localhost
+cd tools
+python model_ota_cli.py --file ../models/anomaly_detector.tflite --mode mqtt --broker localhost
 ```
 
 ## 5. Monitoring & Safety Logic

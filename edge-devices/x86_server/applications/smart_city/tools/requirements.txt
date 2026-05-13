@@ -1,0 +1,8 @@
+# Use onnxruntime-gpu for server deployments to access CUDA/TensorRT EPs
+# It will gracefully fallback to CPU if no GPU is present.
+onnxruntime-gpu
+torch>=2.0.0
+torchvision
+opencv-python-headless
+numpy
+paho-mqtt

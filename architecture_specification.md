@@ -94,7 +94,19 @@ edgeai-reference-architecture/
 ├── docs/                   # Architecture, deployment guides, benchmarks
 ├── datasets/               # Raw, processed, and annotation data
 ├── models/                 # Training scripts, optimized models, inference code
-├── edge-devices/           # Hardware-specific integration (jetson, rpi, esp32, hailo)
+├── edge-devices/           # Hardware integrations
+│   ├── esp32/              # Microcontrollers (TinyML)
+│   │   └── applications/   # e.g., anomaly_detection
+│   ├── jetson/             # NVIDIA GPUs (TensorRT)
+│   │   └── applications/   # e.g., smart_camera
+│   ├── intel/              # Intel CPUs/iGPUs (OpenVINO)
+│   │   └── applications/   # e.g., defect_inspection
+│   ├── rpi/                # Raspberry Pi (TFLite XNNPACK)
+│   │   └── applications/   # e.g., smart_retail
+│   ├── coral/              # Google Edge TPU (PyCoral)
+│   │   └── applications/   # e.g., traffic_monitoring
+│   └── x86_server/         # Edge Servers (ONNX Runtime)
+│       └── applications/   # e.g., smart_city
 ├── deployment/             # Dockerfiles, K8s manifests, Terraform configs
 ├── pipelines/              # CI/CD, data ingestion, training workflows
 └── examples/               # Reference implementations (smart-city, retail, etc.)
