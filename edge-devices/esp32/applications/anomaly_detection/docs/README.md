@@ -1,6 +1,6 @@
 # Edge AI Pipeline - ESP32 Integration
 
-This directory contains the Python-based machine learning pipeline for the ESP32 integration of the Edge AI Pipeline. It handles data generation, model training, and Over-The-Air (OTA) deployment to the firmware's AI Engine.
+This directory contains the Python-based machine learning pipeline for Edge AI integration. It handles data generation, model training, and Over-The-Air (OTA) deployment to the firmware's AI Engine.
 
 ## 🚀 Quick Start
 
@@ -23,7 +23,7 @@ cd tools
 python edge_ai_trainer.py --export-dir ../models
 ```
 Outputs will be saved in the `models/` directory:
-- `../models/anomaly_detector.tflite`: Quantized model for ESP32.
+- `../models/anomaly_detector.tflite`: Quantized model for Edge Nodes.
 - `../models/scaler.joblib`: Normalization parameters for the Python environment.
 
 ### 3. Inject Live Data for Testing

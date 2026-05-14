@@ -1,6 +1,6 @@
 # ESP32 Edge AI Training & Deployment Workflow
 
-This guide outlines the end-to-end process for developing, optimizing, and deploying Machine Learning models to the ESP32 Edge Gateway.
+This guide outlines the end-to-end process for developing, optimizing, and deploying Machine Learning models to industrial Edge Nodes and Gateways.
 
 ## 1. Data Acquisition & Feature Map
 

@@ -6,6 +6,11 @@ import paho.mqtt.client as mqtt
 
 import numpy as np
 
+# ─────────────────────────────────────────────────────────────────────────────
+# Industrial Sensor Field Data Simulator
+# Generates synthetic data for Edge Node training and testing.
+# ─────────────────────────────────────────────────────────────────────────────
+
 class FieldDataGenerator:
     def __init__(self, feature_dim=6):
         self.feature_dim = feature_dim

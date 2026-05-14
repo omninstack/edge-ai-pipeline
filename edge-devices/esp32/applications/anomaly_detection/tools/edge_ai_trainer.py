@@ -15,7 +15,7 @@ from field_data_generator import FieldDataGenerator
 def create_anomaly_detector(input_dim=6):
     """
     Autoencoder for detecting anomalies in industrial sensor data.
-    Goal: < 100KB footprint on ESP32.
+    Goal: < 100KB footprint on microcontrollers.
     Using Sequential API for maximum TFLite compatibility.
     """
     model = tf.keras.Sequential([
@@ -156,7 +156,7 @@ def train_and_export(export_dir='models', header_out=None):
 
 if __name__ == "__main__":
     import argparse
-    parser = argparse.ArgumentParser(description="Edge AI Model Trainer")
+    parser = argparse.ArgumentParser(description="Industrial Edge AI Model Trainer")
     parser.add_argument("--export-dir", default="models", help="Directory to save the outputs")
     parser.add_argument("--header-out", default=None, help="Optional specific path to export the C header file for firmware builds")
     args = parser.parse_args()
